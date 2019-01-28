@@ -246,7 +246,7 @@ public class problem1_part_b
 		//---------------------------------------populating the queue of packets
 		
 		double delay = 0.0;
-        printPacketsQueue(packetsqueue);
+        //printPacketsQueue(packetsqueue);
         double tt[] = new double[4];
 		while(!packetsqueue.isEmpty())
 		{
@@ -280,16 +280,16 @@ public class problem1_part_b
                 tt[2] = current_packet.occ_time_actual;
                 System.out.println(current_packet.packet_id+" delay calculated");
             }
-            if(packetsqueue.size() != 0)
-            {
-            	System.out.println("\n\n\n-------------------------------------------------");
-		        System.out.println("...| (Source_id, Packet_Number, TimeStamp)|...");
-		        printPresentOccurrenceTime(packetsqueue);
-		        System.out.println("-------------------------------------------------\n\n");
-            }
+          //   if(packetsqueue.size() != 0)
+          //   {
+          //   	System.out.println("\n\n\n-------------------------------------------------");
+		        // System.out.println("...| (Source_id, Packet_Number, TimeStamp)|...");
+		        // printPresentOccurrenceTime(packetsqueue);
+		        // System.out.println("-------------------------------------------------\n\n");
+          //   }
 
 		}
-		System.out.println("-------------------------------\n\n"+"\033[0;1m"+"The delay is " + delay);
+		//System.out.println("-------------------------------\n\n"+"\033[0;1m"+"The delay is " + delay);
 		for(int i = 1; i <= n_of_sources; i++)
 		{
             ArrayList<Result> list = map.get(i);

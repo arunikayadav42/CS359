@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import os.path
 from os import path
 
+# uncomment the below code for question a
+
 for i in range(0, 4):
     file_name = 'problem1_part_a_source'+str(i)+'.csv'
     filepath = os.path.exists(file_name)
@@ -17,6 +19,8 @@ for i in range(0, 4):
         plt.title('Source '+str(i))
         plt.savefig('./problem1_part_a_source'+str(i)+'.png')
         plt.close()
+
+# uncomment the below code for question b
 
 for i in range(0, 4):
     file_name = 'problem1_part_b_source'+str(i)+'.csv'
